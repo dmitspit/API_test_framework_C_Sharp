@@ -1,5 +1,15 @@
-Aut17 dspitchenko
-# You can download and install (npm) Json server https://github.com/typicode/json-server
+This is API Testing Framework using .Net Framework 4.8 with RestSharp library.
+========================
+### In my project I used:
+* .Net Framework 4.8
+* NUnit 
+* RestSharp library
+* Newtonjson library
+* Bogus library (to create random values)
+* Log4net
+---
+## Follow the instruction to see hot my framework works, 
+**download and install (npm) Json server https://github.com/typicode/json-server
 
 In order to install the JSON server, use the following command:
 
