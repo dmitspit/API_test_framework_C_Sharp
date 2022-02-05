@@ -36,3 +36,4 @@ Allure-Report/
 *.vsp
 *.vspx
 .vs/
+.idea/
