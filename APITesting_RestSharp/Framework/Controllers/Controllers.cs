@@ -13,6 +13,7 @@ namespace APITesting_RestSharp.Framework.Controllers
         private static readonly Lazy<AlbumsController> AlbumsControllers = new Lazy<AlbumsController>(() => new AlbumsController(_restClient));
         private static readonly Lazy<PhotosController> PhotosControllers = new Lazy<PhotosController>(() => new PhotosController(_restClient));
         private static readonly Lazy<TodosController> TodosController = new Lazy<TodosController>(() => new TodosController(_restClient));
+        private static readonly Lazy<LoginController> LoginController = new Lazy<LoginController>(() => new LoginController(_restClient));
 
         public UserController Users => UsersControllers.Value;
         public PostController Posts => PostControllers.Value;
@@ -20,6 +21,7 @@ namespace APITesting_RestSharp.Framework.Controllers
         public AlbumsController Albums => AlbumsControllers.Value;
         public PhotosController Photos => PhotosControllers.Value;
         public TodosController Todos => TodosController.Value;
+        public LoginController Login => LoginController.Value;
 
         private static IRestClient _restClient;
 

@@ -148,13 +148,13 @@ namespace APITesting_RestSharp.Tests
         public void VerifyStatusCode404AfterUpdatingNonExistingEntity()
         {
             string bodyStr = new Faker().Lorem.Sentence();
-            IRestResponse<Post> postRespose = Controllers.Posts.UpdatePost("30000", "body", bodyStr, _loginData);
+            IRestResponse<Post> postResponse = Controllers.Posts.UpdatePost("30000", "body", bodyStr, _loginData);
 
             Assert.Multiple(() =>
             {
-                CustomAsserts.AssertStatusCode(404, postRespose);
+                CustomAsserts.AssertStatusCode(404, postResponse);
                 Logger.Info("Assert content is not null");
-                Assert.IsTrue(postRespose.Content == "{}", "Content length is not as expected");
+                Assert.IsTrue(postResponse.Content == "{}", "Content length is not as expected");
             });
         }
 
